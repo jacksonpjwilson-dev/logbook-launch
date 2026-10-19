@@ -15,7 +15,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="preload" as="image" href="shots/home-page2.webp"><link rel="preload" as="image" href="shots/dock-zoom.webp">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 <header class="nav"><a class="brand" href="#top"><img src="icon-180.png" alt="" width="28" height="28">Logbook</a>
@@ -43,12 +44,12 @@
 
 <section class="feature flip">
   <div class="copy rv"><p class="kicker">Swipe pager</p><h2>Swipe between pages,<br>just like your phone.</h2><p>Spread your widgets across pages and flick between them. The dock stays put, so your apps are always one tap away.</p></div>
-  <div class="stage rv d1"><div class="phone"><div class="scr"><div class="pager"><img src="shots/home.webp" alt="Home page one" loading="lazy"><img src="shots/home-page2.webp" alt="Home page two" loading="lazy"></div></div><i class="island"></i></div></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr pager-scr"><div class="pager"><img src="shots/home.webp" alt="Home page one" decoding="sync"><img src="shots/home-page2.webp" alt="Home page two" decoding="sync"></div></div><i class="island"></i></div></div>
 </section>
 
 <section class="feature">
   <div class="copy rv"><p class="kicker">Dock apps</p><h2>Tap an app.<br>Watch it open.</h2><p>Training, Food, History, Sleep and Settings sit in the dock. Each one grows out of its icon into a full app, then shrinks back when you're done.</p></div>
-  <div class="stage rv d1"><div class="phone"><div class="scr zoomer"><img src="shots/home.webp" alt="" loading="lazy"><img class="zoomed" src="shots/dock-zoom.webp" alt="Food app opening from the dock" loading="lazy"><span class="tap"></span></div><i class="island"></i></div></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr zoomer"><img src="shots/home.webp" alt=""><img class="zoomed" src="shots/dock-zoom.webp" alt="Food app opening from the dock"><span class="tap"></span></div><i class="island"></i></div></div>
 </section>
 
 <section class="feature flip">
