@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="shots/home-page2.webp"><link rel="preload" as="image" href="shots/dock-zoom.webp">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 <header class="nav"><a class="brand" href="#top"><img src="icon-180.png" alt="" width="28" height="28">Logbook</a>
-<nav><a href="#home">Home screen</a><a href="#train">Training</a><a href="#food">Food</a><a href="#history">History</a><a href="#sync">Sync</a></nav>
+<nav><a href="#home">Home screen</a><a href="#train">Training</a><a href="#food">Food</a><a href="#history">History</a><a href="#ios">iOS</a><a href="#sync">Sync</a></nav>
 <a class="pill sm" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Try the preview</a></header>
 
 <main id="top">
@@ -32,6 +32,7 @@
     <h1>Your whole day.<br><span class="grad">One home screen.</span></h1>
     <p class="lede">Training, food, sleep and progress live together in widgets you arrange yourself. Glance, tap, log, done.</p>
     <div class="ctas"><a class="pill" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Open the live preview</a><a class="pill ghost" href="#home">See what's new ↓</a></div>
+    <div class="storewrap"><span class="store" role="img" aria-label="Coming soon on the App Store"><svg class="apl" viewBox="0 0 17 20" aria-hidden="true"><path fill="currentColor" d="M14.1 10.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C3.6 4.8 2 5.8 1.1 7.4c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.7-1-2.7-4.3zM11.6 3c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span><small>Coming soon on the</small><b>App Store</b></span></span></div>
   </div>
   <div class="hero-phone rv d2"><div class="phone xl"><div class="scr"><img src="shots/home.webp" alt="Logbook widget home screen" fetchpriority="high"></div><i class="island"></i></div></div>
 </section>
@@ -95,6 +96,44 @@
   </div>
 </section>
 
+
+<section id="ios" class="ios">
+  <div class="copy center rv"><p class="kicker">Beyond the phone</p><h2>On your wrist, on your Lock Screen, and everywhere in between.</h2><p>The native iOS app takes Logbook beyond the app itself, so you can log a set or glance at your day without unlocking.</p></div>
+  <div class="ios-grid">
+    <article class="ic rv"><div class="istage lockbg">
+      <div class="lk-time"><small>Monday 19 October</small><b>9:41</b></div>
+      <div class="dyn" aria-hidden="true"><span class="dyn-l"><img src="icon-180.png" alt="" width="20" height="20"><i>Rest</i></span><span class="dyn-r"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" class="trk"/><circle cx="10" cy="10" r="8" class="prg" pathLength="100" style="stroke-dashoffset:var(--off,0)"/></svg><b class="rt">1:30</b></span></div>
+      <div class="live"><div class="live-top"><img src="icon-180.png" alt="" width="20" height="20"><span>Rest timer · Bench Press</span><b class="rt">1:30</b></div><div class="live-mid"><span>Set 3 of 4 up next</span><span>80 kg × 8</span></div><div class="bar"><i class="rbar"></i></div><div class="live-btns"><span>−15s</span><span>+15s</span><span>Skip</span></div></div>
+    </div><h3>Live rest timer</h3><p>Counts down on the Lock Screen and in the Dynamic Island, then taps you when it's time to lift.</p><em class="soon">Coming with the iOS app</em></article>
+
+    <article class="ic rv d1"><div class="istage homebg">
+      <div class="wgrid">
+        <div class="wd sm"><small>Calories</small><div class="ring"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="27" class="trk"/><circle cx="32" cy="32" r="27" class="prg" pathLength="100" stroke-dasharray="58 100"/></svg><b>1017<small>left</small></b></div><div class="mac"><i style="--v:66%;--c:#818cf8"></i><i style="--v:60%;--c:#f472b6"></i><i style="--v:48%;--c:#2dd4bf"></i></div></div>
+        <div class="wd sm nxt"><small>Next workout</small><b class="big">Pull</b><span>Day 2 of 4</span><ul><li>Deadlift</li><li>Pull-up</li></ul></div>
+        <div class="apps"><i style="background:linear-gradient(160deg,#5ac8fa,#007aff)">☁️</i><i style="background:linear-gradient(160deg,#ff9f43,#ee5a24)">🎧</i><img src="icon-180.png" alt=""><i style="background:linear-gradient(160deg,#7bed9f,#20bf6b)">💬</i></div>
+      </div>
+      <div class="lkw"><span class="cw1"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="14" class="trk"/><circle cx="18" cy="18" r="14" class="prg" pathLength="100" stroke-dasharray="58 100"/></svg><b>1017</b></span><span class="cw1"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="14" class="trk"/><circle cx="18" cy="18" r="14" class="prg" pathLength="100" stroke-dasharray="66 100"/></svg><b>112g</b></span><span class="rect"><small>Next up</small><b>Pull · Day 2</b></span></div>
+    </div><h3>Home &amp; Lock Screen widgets</h3><p>Your calorie ring and next workout, right on your iPhone's Home Screen and Lock Screen.</p><em class="soon">Coming with the iOS app</em></article>
+
+    <article class="ic rv"><div class="istage watchbg">
+      <div class="watch"><div class="wcase"><div class="wscr">
+        <div class="wtop"><span class="wg">Pull</span><span>12:48</span></div>
+        <div class="wex">Deadlift · Set 3</div><div class="wval">147.5<small>kg</small> × 8</div>
+        <div class="wrings"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" class="r1t"/><circle cx="30" cy="30" r="26" class="r1" pathLength="100" stroke-dasharray="72 100"/><circle cx="30" cy="30" r="19" class="r2t"/><circle cx="30" cy="30" r="19" class="r2" pathLength="100" stroke-dasharray="55 100"/><circle cx="30" cy="30" r="12" class="r3t"/><circle cx="30" cy="30" r="12" class="r3" pathLength="100" stroke-dasharray="85 100"/></svg><div class="wstat"><b>9/12</b><small>sets</small><b>142</b><small>bpm</small></div></div>
+        <div class="wbtn">✓ Log set</div>
+      </div></div><i class="crown"></i><i class="sbtn"></i></div>
+    </div><h3>Apple Watch</h3><p>Log sets from your wrist, track sets and heart rate as you go, and leave your phone in your bag.</p><em class="soon">Coming with the iOS app</em></article>
+
+    <article class="ic rv d1"><div class="istage notifbg">
+      <div class="nstack">
+        <div class="note n1"><img src="icon-180.png" alt="" width="20" height="20"><div><div class="nh"><b>New PR 🎉</b><time>now</time></div><p>Bench Press: estimated 1RM is now 101 kg (+2.5 kg).</p></div></div>
+        <div class="note n2"><img src="icon-180.png" alt="" width="20" height="20"><div><div class="nh"><b>Rest's up</b><time>2m ago</time></div><p>Set 3 of Deadlift is up next: 147.5 kg × 8.</p></div></div>
+        <div class="note n3"><img src="icon-180.png" alt="" width="20" height="20"><div><div class="nh"><b>58 g protein to go</b><time>6:30 pm</time></div><p>Dinner's coming up. A salmon fillet would get you most of the way.</p></div></div>
+      </div>
+    </div><h3>Smart notifications</h3><p>PR alerts, rest-timer pings and gentle protein nudges, only when they're actually useful.</p><em class="soon">Coming with the iOS app</em></article>
+  </div>
+</section>
+
 <section id="sync" class="feature">
   <div class="copy rv"><p class="kicker">Sync</p><h2>On every device.<br>Even offline.</h2><p>Sign in with Google or email and your log follows you. Everything saves to your phone first, so it works offline and catches up the moment you're back online.</p>
   <ul class="ticks"><li>Works fully without an account</li><li>Changes merge automatically across devices</li><li>Your data stays private to your account</li></ul></div>
@@ -105,10 +144,10 @@
   <img class="appicon" src="icon-512.png" alt="" width="96" height="96">
   <h2>Your day, on one screen.</h2>
   <p>Open the live preview on your iPhone, tap Share, then Add to Home Screen.</p>
-  <a class="pill" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Open the live preview</a>
+  <div class="ctas center"><a class="pill" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Open the live preview</a><span class="store" role="img" aria-label="Coming soon on the App Store"><svg class="apl" viewBox="0 0 17 20" aria-hidden="true"><path fill="currentColor" d="M14.1 10.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C3.6 4.8 2 5.8 1.1 7.4c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.7-1-2.7-4.3zM11.6 3c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span><small>Coming soon on the</small><b>App Store</b></span></span></div>
 </section>
 </main>
 <footer><span>© 2026 Logbook</span><span>Screens shown use sample data.</span></footer>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
