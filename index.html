@@ -3,202 +3,111 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>The Logbook — Coming soon to the App Store</title>
-<meta name="description" content="Training, food, sleep and progress in one calm, fast app. The new Logbook for iPhone is coming soon.">
-<meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
-<meta name="color-scheme" content="light dark">
-<meta property="og:type" content="website">
-<meta property="og:title" content="The Logbook — Coming soon to iPhone">
-<meta property="og:description" content="Train, eat and recover with intent. One app for workouts, macros, pantry, sleep and progress.">
-<meta property="og:url" content="https://jacksonpjwilson-dev.github.io/logbook-launch/">
+<title>Logbook: your whole day, one home screen</title>
+<meta name="description" content="Logbook brings training, food, sleep and progress together on a widget home screen you design yourself. Swipe, tap, log, done.">
+<meta name="theme-color" content="#0b0e14">
+<meta property="og:title" content="Logbook: your whole day, one home screen">
+<meta property="og:description" content="Training, food, sleep and progress in widgets you arrange yourself.">
 <meta property="og:image" content="https://jacksonpjwilson-dev.github.io/logbook-launch/og.png">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://jacksonpjwilson-dev.github.io/logbook-launch/og.png">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="icon-180.png">
-<link rel="preload" as="image" href="screens/today.webp">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="nav" id="nav">
-  <a class="brand" href="#top" aria-label="The Logbook home"><img src="favicon.svg" alt="" width="28" height="28"><span>The Logbook</span></a>
-  <nav aria-label="Sections"><a href="#features">Features</a><a href="#how">How it works</a><a href="#ios">iPhone</a><a href="#faq">FAQ</a></nav>
-  <a class="btn sm" href="#notify">Get notified</a>
-</header>
+<header class="nav"><a class="brand" href="#top"><img src="icon-180.png" alt="" width="28" height="28">Logbook</a>
+<nav><a href="#home">Home screen</a><a href="#train">Training</a><a href="#food">Food</a><a href="#history">History</a><a href="#sync">Sync</a></nav>
+<a class="pill sm" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Try the preview</a></header>
 
-<main id="main">
-<section class="hero" id="top">
-  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
-  <div class="hero-copy">
-    <span class="pill"><span class="dot"></span>Coming soon to iPhone</span>
-    <h1>Train. Fuel. Recover.<br><span class="grad">All in one logbook.</span></h1>
-    <p class="lede">Workouts, macros, pantry, sleep and progress, in one calm, fast app built around your day. The new Logbook is on its way to the App Store.</p>
-    <div class="cta-row">
-      <a class="store" href="#notify" aria-label="Coming soon to the App Store">
-        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>
-        <span><small>Coming soon to the</small>App Store</span>
-      </a>
-      <a class="btn ghost" href="https://jacksonpjwilson-dev.github.io/logbook-v2/" rel="noopener">Try the web preview →</a>
-    </div>
+<main id="top">
+<section class="hero">
+  <div class="glow"></div>
+  <div class="hero-copy rv">
+    <img class="appicon" src="icon-512.png" alt="Logbook app icon" width="112" height="112">
+    <p class="kicker">Introducing the new Logbook</p>
+    <h1>Your whole day.<br><span class="grad">One home screen.</span></h1>
+    <p class="lede">Training, food, sleep and progress live together in widgets you arrange yourself. Glance, tap, log, done.</p>
+    <div class="ctas"><a class="pill" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Open the live preview</a><a class="pill ghost" href="#home">See what's new ↓</a></div>
   </div>
-  <div class="hero-phone">
-    <div class="phone" id="heroPhone" aria-roledescription="carousel" aria-label="App screens">
-      <div class="island" aria-hidden="true"></div>
-      <div class="screen">
-        <img class="on" src="screens/today.webp" alt="Today screen with calorie ring, macros, training, sleep and weight" width="390" height="844">
-        <img src="screens/session.webp" alt="In-progress workout session with sets, weights and reps" width="390" height="844" loading="lazy">
-        <img src="screens/food.webp" alt="Food log with calorie ring and meals" width="390" height="844" loading="lazy">
-        <img src="screens/progress.webp" alt="Progress charts with estimated one-rep max" width="390" height="844" loading="lazy">
-        <img src="screens/pantry.webp" alt="Pantry stock with low-stock flags" width="390" height="844" loading="lazy">
-        <img src="screens/today-dark.webp" alt="Today screen in dark mode" width="390" height="844" loading="lazy">
-      </div>
-    </div>
-    <div class="float f1" aria-hidden="true"><b>🔥 Streak</b><span>Coming in the app</span></div>
-    <div class="float f2" aria-hidden="true"><b>New PR</b><span>Bench · est. 1RM</span></div>
-    <div class="dots" id="heroDots" aria-hidden="true"></div>
-  </div>
+  <div class="hero-phone rv d2"><div class="phone xl"><div class="scr"><img src="shots/home.webp" alt="Logbook widget home screen" fetchpriority="high"></div><i class="island"></i></div></div>
 </section>
 
-<section class="marquee" aria-label="Highlights">
-  <div class="track"><span>Workout templates</span><span>Rest timer</span><span>Estimated 1RM</span><span>Macro ring</span><span>Meal plan</span><span>Pantry & shopping list</span><span>Sleep</span><span>Progress calendar</span><span>Coach sharing</span><span>Works offline</span><span aria-hidden="true">Workout templates</span><span aria-hidden="true">Rest timer</span><span aria-hidden="true">Estimated 1RM</span><span aria-hidden="true">Macro ring</span><span aria-hidden="true">Meal plan</span><span aria-hidden="true">Pantry & shopping list</span><span aria-hidden="true">Sleep</span><span aria-hidden="true">Progress calendar</span><span aria-hidden="true">Coach sharing</span><span aria-hidden="true">Works offline</span></div>
-</section>
-
-<div id="features">
-<section class="feature">
-  <div class="f-copy reveal">
-    <span class="eyebrow teal">Train</span>
-    <h2>Log a set in a tap. <span class="mute">Beat it next time.</span></h2>
-    <p>Start from a template, see last session's numbers on every exercise, and let the rest timer pace you. Sessions survive app closes, so nothing gets lost mid-workout.</p>
-    <ul class="ticks"><li>Templates for Push, Pull, Legs and your own</li><li>Built-in rest timer</li><li>PRs and estimated 1RM, tracked automatically</li></ul>
-  </div>
-  <div class="f-media reveal"><div class="phone sm"><div class="island"></div><div class="screen"><img class="on" src="screens/session.webp" alt="Workout session in progress" loading="lazy" width="390" height="844"></div></div></div>
+<section id="home" class="feature">
+  <div class="copy rv"><p class="kicker">Widget home</p><h2>Everything that matters,<br>before you even tap.</h2><p>Today's plan, calories left, last night's sleep, your weight trend and your split cycle, all on one screen. Add, remove and rearrange widgets until it feels like yours.</p>
+  <ul class="ticks"><li>A daily checklist right next to your name</li><li>Live calorie and macro rings</li><li>Sleep, weight and streak widgets</li></ul></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr"><img src="shots/home.webp" alt="Home screen widgets" loading="lazy"></div><i class="island"></i></div></div>
 </section>
 
 <section class="feature flip">
-  <div class="f-copy reveal">
-    <span class="eyebrow indigo">Fuel</span>
-    <h2>Hit your macros <span class="mute">without the math.</span></h2>
-    <p>A calorie ring and macro bars show exactly what's left today. Plan meals against your targets, and keep the pantry stocked with low-stock flags and a shopping list that builds itself.</p>
-    <ul class="ticks"><li>Calorie ring with protein, carbs and fat</li><li>Meal plan vs. targets</li><li>Pantry stock, low-stock flags and shopping list</li></ul>
-  </div>
-  <div class="f-media reveal duo"><div class="phone sm"><div class="island"></div><div class="screen"><img class="on" src="screens/food.webp" alt="Food log" loading="lazy" width="390" height="844"></div></div><div class="phone sm back"><div class="island"></div><div class="screen"><img class="on" src="screens/pantry.webp" alt="Pantry" loading="lazy" width="390" height="844"></div></div></div>
+  <div class="copy rv"><p class="kicker">Swipe pager</p><h2>Swipe between pages,<br>just like your phone.</h2><p>Spread your widgets across pages and flick between them. The dock stays put, so your apps are always one tap away.</p></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr"><div class="pager"><img src="shots/home.webp" alt="Home page one" loading="lazy"><img src="shots/home-page2.webp" alt="Home page two" loading="lazy"></div></div><i class="island"></i></div></div>
 </section>
 
 <section class="feature">
-  <div class="f-copy reveal">
-    <span class="eyebrow pink">Progress</span>
-    <h2>See the trend, <span class="mute">not just the day.</span></h2>
-    <p>Charts for strength, volume and body weight, plus a calendar that shows your consistency at a glance. Sleep sits right next to it, because recovery counts.</p>
-    <ul class="ticks"><li>Lift, volume and body charts</li><li>Training & nutrition calendar</li><li>Sleep hours and quality</li></ul>
+  <div class="copy rv"><p class="kicker">Dock apps</p><h2>Tap an app.<br>Watch it open.</h2><p>Training, Food, History, Sleep and Settings sit in the dock. Each one grows out of its icon into a full app, then shrinks back when you're done.</p></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr zoomer"><img src="shots/home.webp" alt="" loading="lazy"><img class="zoomed" src="shots/dock-zoom.webp" alt="Food app opening from the dock" loading="lazy"><span class="tap"></span></div><i class="island"></i></div></div>
+</section>
+
+<section class="feature flip">
+  <div class="copy rv"><p class="kicker">Mini apps</p><h2>Widgets that open<br>into mini apps.</h2><p>Tap the calorie widget and you get the full story: how much is left today, plus 7, 30 and 90-day charts against your goals.</p></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr"><img src="shots/mini-calories.webp" alt="Calories mini app" loading="lazy"></div><i class="island"></i></div></div>
+</section>
+
+<section class="colourways">
+  <div class="copy center rv"><p class="kicker">Colourways</p><h2>Twelve looks. Light, dark or auto.</h2><p>From Logbook Teal to Midnight Navy and Electric Violet, each colourway comes with its own type pairing.</p></div>
+  <div class="cw-picker rv d1" role="tablist" aria-label="Colourway">
+    <button class="cw on" data-src="shots/home.webp" role="tab" aria-selected="true"><i style="background:#0d9488"></i>Teal</button>
+    <button class="cw" data-src="shots/home-dark.webp" role="tab" aria-selected="false"><i style="background:#d4af37"></i>Navy &amp; Gold</button>
+    <button class="cw" data-src="shots/home-violet.webp" role="tab" aria-selected="false"><i style="background:#7c3aed"></i>Violet</button>
+    <button class="cw" data-src="shots/settings.webp" role="tab" aria-selected="false"><i class="all"></i>All twelve</button>
   </div>
-  <div class="f-media reveal"><div class="phone sm"><div class="island"></div><div class="screen"><img class="on" src="screens/progress.webp" alt="Progress charts" loading="lazy" width="390" height="844"></div></div></div>
-</section>
-</div>
-
-<section class="how" id="how">
-  <h2 class="center reveal">How it works</h2>
-  <ol class="steps">
-    <li class="reveal"><span>1</span><h3>Set your goal</h3><p>A quick onboarding sets calorie and macro targets for cutting, maintaining or building.</p></li>
-    <li class="reveal"><span>2</span><h3>Log your day</h3><p>Workouts, meals, sleep and weight, each in a few taps from the Today screen.</p></li>
-    <li class="reveal"><span>3</span><h3>Watch it add up</h3><p>PRs, trends and your calendar show what's working, so you know what to do next.</p></li>
-  </ol>
+  <div class="stage rv d2"><div class="phone"><div class="scr"><img id="cwimg" src="shots/home.webp" alt="Home screen in the selected colourway" loading="lazy"></div><i class="island"></i></div></div>
 </section>
 
-<section class="ios" id="ios">
-  <div class="center reveal"><span class="eyebrow indigo">Coming with the iPhone app</span><h2>Built for iPhone. <span class="mute">Made for your wrist too.</span></h2><p class="lede narrow">These are planned for the App Store release and are still in development.</p></div>
-  <div class="ios-grid">
-    <div class="card widget-stage reveal">
-      <div class="lock">
-        <div class="lock-time" aria-hidden="true">9:41</div>
-        <div class="lw-row"><div class="lw ring"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" class="trk"/><circle cx="18" cy="18" r="15" class="val" pathLength="100" stroke-dasharray="62 100"/></svg><b>731</b></div><div class="lw"><small>PROTEIN</small><b>75g</b></div><div class="lw"><small>STREAK</small><b>🔥 12</b></div></div>
-        <div class="live"><div class="live-ic">⏱</div><div><small>Rest · Bench Press</small><b class="tick" id="rest">1:30</b></div><div class="live-bar"><i id="restBar"></i></div></div>
-      </div>
-      <h3>Widgets & Live Activities <em>Coming soon</em></h3>
-      <p>Your calorie ring on the Home Screen, and the rest timer counting down on the Lock Screen and Dynamic Island.</p>
-    </div>
-    <div class="card watch-stage reveal">
-      <div class="watch"><div class="wface"><small>Bench Press · Set 3</small><b>154<span>lb</span> × 8</b><div class="wbtn">✓ Log set</div></div></div>
-      <h3>Apple Watch logging <em>Coming soon</em></h3>
-      <p>Log sets from your wrist and leave your phone in your bag.</p>
-    </div>
-    <div class="card health reveal">
-      <div class="hicons" aria-hidden="true"><span>❤️</span><span class="arrows">⇄</span><img src="favicon.svg" alt=""></div>
-      <h3>Apple Health sync <em>Coming soon</em></h3>
-      <p>Workouts, weight, sleep and nutrition flowing both ways.</p>
-    </div>
-    <div class="card scan reveal">
-      <div class="scanbox" aria-hidden="true"><div class="bars"></div><i class="laser"></i></div>
-      <h3>Barcode & camera scanning <em>Coming soon</em></h3>
-      <p>Point your camera at a label or a plate to log food faster.</p>
-    </div>
+<section id="train" class="trio">
+  <div class="copy center rv"><p class="kicker">Training</p><h2>Plan it. Lift it. Log it.</h2><p>A rotating split that knows what's next, quick set logging with notes on every session and exercise, and a library of more than a hundred exercises.</p></div>
+  <div class="row3">
+    <figure class="rv"><div class="phone"><div class="scr"><img src="shots/training.webp" alt="Training calendar" loading="lazy"></div><i class="island"></i></div><figcaption><b>Training calendar</b>Logged, planned and supplement days at a glance.</figcaption></figure>
+    <figure class="rv d1"><div class="phone"><div class="scr"><img src="shots/session.webp" alt="Live workout session" loading="lazy"></div><i class="island"></i></div><figcaption><b>Live session</b>Last time's numbers, one-tap sets, notes.</figcaption></figure>
+    <figure class="rv d2"><div class="phone"><div class="scr"><img src="shots/library.webp" alt="Exercise library" loading="lazy"></div><i class="island"></i></div><figcaption><b>Exercise library</b>Grouped by muscle, plus your own exercises.</figcaption></figure>
   </div>
 </section>
 
-<section class="streaks" id="streaks">
-  <div class="center reveal"><span class="eyebrow teal">Streaks & achievements · coming soon</span><h2>Momentum you can <span class="grad">feel.</span></h2><p class="lede narrow">Daily streaks and milestone badges to keep you coming back. Here's a preview of the design.</p></div>
-  <div class="streak-card reveal">
-    <div class="flame" aria-hidden="true">🔥</div>
-    <div class="count"><b data-count="12">0</b><span>day streak (example)</span></div>
-    <div class="week" aria-hidden="true"><i class="on">M</i><i class="on">T</i><i class="on">W</i><i class="on">T</i><i class="on">F</i><i class="on">S</i><i>S</i></div>
-  </div>
-  <div class="badges">
-    <div class="badge reveal"><span>🏋️</span><b>First PR</b></div>
-    <div class="badge reveal"><span>🥗</span><b>Macro Master</b></div>
-    <div class="badge reveal"><span>😴</span><b>Well Rested</b></div>
-    <div class="badge reveal"><span>📅</span><b>30-Day Club</b></div>
-    <div class="badge reveal locked"><span>💯</span><b>Century</b></div>
+<section id="food" class="trio">
+  <div class="copy center rv"><p class="kicker">Food</p><h2>Log food the way you actually eat it.</h2><p>Count a banana as one whole item. Weigh chicken in grams or pour milk in millilitres. Scan a barcode, save your go-to meals and name meal slots however you like.</p></div>
+  <div class="row3">
+    <figure class="rv"><div class="phone"><div class="scr"><img src="shots/food.webp" alt="Food day with macro rings" loading="lazy"></div><i class="island"></i></div><figcaption><b>Your day by meal</b>Macros against your goals.</figcaption></figure>
+    <figure class="rv d1"><div class="phone"><div class="scr"><img src="shots/amount-whole.webp" alt="Whole item logging" loading="lazy"></div><i class="island"></i></div><figcaption><b>Whole items</b>One banana, two eggs. Halves too.</figcaption></figure>
+    <figure class="rv d2"><div class="phone"><div class="scr"><img src="shots/amount-measured.webp" alt="Measured food logging" loading="lazy"></div><i class="island"></i></div><figcaption><b>Measured</b>Grams, ounces, ml or cups, converted for you.</figcaption></figure>
   </div>
 </section>
 
-<section class="grid-sec">
-  <h2 class="center reveal">Everything in one place</h2>
-  <div class="fgrid">
-    <div class="fcard reveal"><i>📋</i><h3>Workout templates</h3><p>Reusable splits with last-time numbers.</p></div>
-    <div class="fcard reveal"><i>⏱️</i><h3>Rest timer</h3><p>Paced rest between every set.</p></div>
-    <div class="fcard reveal"><i>🏆</i><h3>PRs & est. 1RM</h3><p>Records detected automatically.</p></div>
-    <div class="fcard reveal"><i>🍽️</i><h3>Meal planning</h3><p>Plan meals against your targets.</p></div>
-    <div class="fcard reveal"><i>🛒</i><h3>Pantry & shopping</h3><p>Low-stock flags and a smart list.</p></div>
-    <div class="fcard reveal"><i>🌙</i><h3>Sleep</h3><p>Hours and quality, next to training.</p></div>
-    <div class="fcard reveal"><i>👥</i><h3>Coach & friend sharing</h3><p>Read-only access you control.</p></div>
-    <div class="fcard reveal"><i>📶</i><h3>Works offline</h3><p>Log anywhere, even with no signal.</p></div>
-    <div class="fcard reveal soon"><i>🧠</i><h3>Smart coach suggestions</h3><p>What to train and eat next. <em>Coming soon</em></p></div>
-    <div class="fcard reveal soon"><i>🔔</i><h3>Reminders</h3><p>Gentle nudges at the right time. <em>Coming soon</em></p></div>
-    <div class="fcard reveal soon"><i>☁️</i><h3>iCloud & cloud sync</h3><p>Your log on every device. <em>Coming soon</em></p></div>
-    <div class="fcard reveal"><i>🎨</i><h3>Make it yours</h3><p>Units, targets, light and dark.</p></div>
+<section id="history" class="trio dark">
+  <div class="copy center rv"><p class="kicker">History</p><h2>See progress, not just numbers.</h2><p>Estimated 1RM trends and weekly volume. Calories and every macro over 7, 30 or 90 days, each measured against the goal you had that day. A month view shows which days hit the mark.</p></div>
+  <div class="row3">
+    <figure class="rv"><div class="phone"><div class="scr"><img src="shots/history-lifts.webp" alt="Lift history charts" loading="lazy"></div><i class="island"></i></div><figcaption><b>Lifts</b>1RM and volume over time.</figcaption></figure>
+    <figure class="rv d1"><div class="phone"><div class="scr"><img src="shots/history-food.webp" alt="30 day food chart" loading="lazy"></div><i class="island"></i></div><figcaption><b>Food trends</b>kcal, protein, carbs and fat.</figcaption></figure>
+    <figure class="rv d2"><div class="phone"><div class="scr"><img src="shots/history-month.webp" alt="Month view of calories" loading="lazy"></div><i class="island"></i></div><figcaption><b>Month view</b>On goal, under or over, day by day.</figcaption></figure>
   </div>
 </section>
 
-<section class="faq" id="faq">
-  <h2 class="center reveal">Questions</h2>
-  <details class="reveal"><summary>When is it coming out?</summary><p>The iPhone app is in development. There's no release date yet. Check back here for launch news.</p></details>
-  <details class="reveal"><summary>Can I try it now?</summary><p>Yes. A web preview with demo data runs in your browser. Data in the preview stays on your device.</p></details>
-  <details class="reveal"><summary>Which features are in the first release?</summary><p>The plan is the core Logbook (training, food, pantry, sleep, progress and sharing) plus as many of the iPhone features shown above as are ready. Anything labeled "Coming soon" is still being built.</p></details>
-  <details class="reveal"><summary>Will it work offline?</summary><p>Yes. Logging works without a connection.</p></details>
-  <details class="reveal"><summary>Can my coach see my log?</summary><p>You can share a read-only view with a coach or friend. They can see your log but can't change it.</p></details>
-  <details class="reveal"><summary>How much will it cost?</summary><p>Pricing hasn't been decided yet.</p></details>
+<section id="sync" class="feature">
+  <div class="copy rv"><p class="kicker">Sync</p><h2>On every device.<br>Even offline.</h2><p>Sign in with Google or email and your log follows you. Everything saves to your phone first, so it works offline and catches up the moment you're back online.</p>
+  <ul class="ticks"><li>Works fully without an account</li><li>Changes merge automatically across devices</li><li>Your data stays private to your account</li></ul></div>
+  <div class="stage rv d1"><div class="phone"><div class="scr"><img src="shots/sync.webp" alt="Account synced in Settings" loading="lazy"></div><i class="island"></i></div></div>
 </section>
 
-<section class="notify" id="notify">
-  <div class="aurora" aria-hidden="true"><i></i><i></i></div>
-  <div class="notify-in reveal">
-    <img src="icon-180.png" alt="" width="84" height="84" class="appicon">
-    <h2>Be first in line.</h2>
-    <p>The Logbook is coming soon to the App Store.</p>
-    <form id="nform" novalidate>
-      <label for="email" class="sr">Email address</label>
-      <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
-      <button class="btn" type="submit">Notify me</button>
-    </form>
-    <p class="fine" id="nmsg" role="status">Nothing is collected or sent from this page.</p>
-  </div>
+<section class="final rv">
+  <img class="appicon" src="icon-512.png" alt="" width="96" height="96">
+  <h2>Your day, on one screen.</h2>
+  <p>Open the live preview on your iPhone, tap Share, then Add to Home Screen.</p>
+  <a class="pill" href="https://jacksonpjwilson-dev.github.io/logbook-v2/preview-widget/">Open the live preview</a>
 </section>
 </main>
-
-<footer><span>© 2026 The Logbook</span><span>Coming soon · App Store is a service mark of Apple Inc.</span></footer>
-<script src="app.js" defer></script>
+<footer><span>© 2026 Logbook</span><span>Screens shown use sample data.</span></footer>
+<script src="app.js?v=2"></script>
 </body>
 </html>
